@@ -85,21 +85,17 @@ ul {
 }
 
 /*Aquí hacemos el desmadre de los iconos*/
-
-
 #icons-container-small{
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
 #icons-container-small{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
 #icons-container-small i{
   display: flex;
   align-items: center;
@@ -107,19 +103,6 @@ ul {
   width: 300px;
   margin-top: 50px;
 }
-
-@media only screen and (max-width: 616px) {
-  #icons-container{
-      display: none;
-  }
-} 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 617px) {
-  #icons-container-small{
-    display: none;
-  }
-} 
-
 /*Aquí termina el desmadre de los iconos*/
 
 
@@ -371,6 +354,25 @@ footer > ul > li:first-of-type {
   text-align: center;
 }
 
+/*Aqui se hace el cambio de resolucion grande a chica */
+
+@media only screen and (max-width: 616px) {
+  #icons-container{
+      display: none;
+  }
+  .top-country-gridarea{
+    display: grid;
+    grid-template-columns: 33vw;
+    grid-template-rows: auto;
+    justify-items: center;
+  }
+}
+
+@media only screen and (min-width: 617px) {
+  #icons-container-small{
+    display: none;
+  }
+} 
 
 
 
